@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi propia app del clima</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="contenedor-app">
+        <h1>Clima de la ciudad</h1>
+
+        <div class="seccion-busqueda">
+            <input type="text" id="entrada-ciudad" placeholder="Escribe una ciudad">
+            <button id="boton-buscar">Buscar</button>
+        </div>
+
+        <div id="cargando" class="spinner oculto"></div>
+        <div id="mensaje-error" class="mensaje-error oculto"></div>
+
+        <div id="area-clima" class="oculto">
+            <div class="clima-actual">
+                <h2 id="nombre-ubicacion"></h2>
+                <div class="info-principal-clima">
+                    <i id="icono-clima" class="fas"></i>
+                    <p id="temperatura"></p>
+                </div>
+                <p id="descripcion-clima"></p>
+                <div class="detalles-extra">
+                    <p>Humedad: <span id="humedad"></span></p>
+                    <p>Viento: <span id="velocidad-viento"></span></p>
+                </div>
+            </div>
+
+            <div class="seccion-pronostico">
+                <h3>Pronóstico para los próximos Días</h3>
+                <div id="tarjetas-pronostico">
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
